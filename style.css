@@ -4,6 +4,9 @@
   --clr-white: #fefefe;
   --clr-blue: #324ca8;
   --clr-purple: #9c32a8;
+  --clr-green: #32a848;
+  --clr-yellow: #9ca832;
+  --clr-red: #a8323c;
 }
 
 html {
@@ -33,4 +36,48 @@ body {
   color: var(--clr-purple);
   font-size: var(--font-big);
   font-weight: bold;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.button {
+  padding: 4px 8px;
+  border: unset;
+  border-radius: 2px;
+  color: var(--clr-white);
+}
+
+.increase {
+  background-color: var(--clr-green);
+}
+
+.reset {
+  background-color: var(--clr-yellow);
+}
+
+.decrease {
+  background-color: var(--clr-red);
+}
+
+.increase,
+.reset,
+.decrease {
+  transition: filter 0.3s;
+}
+
+.increase:hover,
+.reset:hover,
+.decrease:hover {
+  cursor: pointer;
+  filter: brightness(110%);
+}
+
+.increase:active,
+.reset:active,
+.decrease:active {
+  filter: brightness(120%);
 }
