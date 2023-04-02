@@ -3,6 +3,7 @@
 
   --clr-white: #fefefe;
   --clr-blue: #324ca8;
+  --clr-purple: #9c32a8;
 }
 
 html {
@@ -28,6 +29,7 @@ body {
 }
 
 .counter {
+  color: var(--clr-purple);
   font-size: var(--font-big);
   font-weight: bold;
 }
