@@ -1,6 +1,7 @@
 :root {
   --font-big: 2rem;
 
+  --clr-white: #fefefe;
   --clr-blue: #324ca8;
 }
 
@@ -20,6 +21,10 @@ body {
   align-items: center;
   background-color: var(--clr-blue);
   font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+  color: var(--clr-white);
 }
 
 .counter {
