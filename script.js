@@ -1,7 +1,13 @@
 const counterEl = document.querySelector('.counter');
 const buttonEls = document.querySelectorAll('.button');
+const stepEl = document.querySelector('.step');
 
 let counter = 0;
+let step = 1;
+
+stepEl.addEventListener('input', () => {
+  step = +stepEl.value;
+});
 
 buttonEls.forEach(button =>
   button.addEventListener('click', () => {
@@ -11,8 +17,8 @@ buttonEls.forEach(button =>
 );
 
 function manipulateCounter(action) {
-  if (action === 'increase') counter++;
-  else if (action === 'decrease') counter--;
+  if (action === 'increase') counter += step;
+  else if (action === 'decrease') counter -= step;
   else counter = 0;
 
   counterEl.innerText = counter;
