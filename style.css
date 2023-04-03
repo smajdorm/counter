@@ -35,7 +35,7 @@ body {
 }
 
 .header {
-  color: var(--clr-white);
+  margin-bottom: 0;
 }
 
 .counter {
