@@ -1,6 +1,12 @@
 :root {
   --font-big: 2rem;
 
+  --space-xs: 2px;
+  --space-sm: 4px;
+  --space-md: 8px;
+  --space-lg: 16px;
+  --space-xl: 32px;
+
   --clr-white: #fefefe;
   --clr-blue: #324ca8;
   --clr-purple: #9c32a8;
@@ -23,7 +29,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
+  gap: var(--space-xl);
   background-color: var(--clr-blue);
   font-family: 'Open Sans', sans-serif;
 }
@@ -41,13 +47,13 @@ body {
 .buttons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  gap: var(--space-lg);
 }
 
 .button {
-  padding: 4px 8px;
+  padding: var(--space-sm) var(--space-md);
   border: unset;
-  border-radius: 2px;
+  border-radius: var(--space-xs);
   color: var(--clr-white);
 }
 
