@@ -6,6 +6,8 @@ let counter = 0;
 let step = 1;
 
 stepEl.addEventListener('input', () => {
+  if (stepEl.value === '') stepEl.value = 1;
+
   step = +stepEl.value;
 });
 
