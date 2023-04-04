@@ -45,6 +45,13 @@ body {
   font-weight: bold;
 }
 
+.step {
+  width: 64px;
+  padding: var(--space-sm) var(--space-md);
+  border: unset;
+  border-radius: var(--space-xs);
+}
+
 .buttons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
