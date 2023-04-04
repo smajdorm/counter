@@ -23,3 +23,10 @@ function manipulateCounter(action) {
 
   counterEl.innerText = counter;
 }
+
+function init() {
+  counterEl.innerText = counter;
+  stepEl.value = step;
+}
+
+init();
